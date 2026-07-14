@@ -1,0 +1,84 @@
+{
+  "testimonials": [
+    {
+      "id": 10,
+      "name": "hey",
+      "rating": 5,
+      "mobile": "9907454657",
+      "text": "mbmbmbmb",
+      "avatar": "/images/testimonials/avatar.png"
+    },
+    {
+      "id": 9,
+      "name": "imraj",
+      "rating": 5,
+      "mobile": "9907454657",
+      "text": "imraj",
+      "avatar": "/images/testimonials/avatar.png"
+    },
+    {
+      "id": 8,
+      "name": "im testing",
+      "rating": 5,
+      "mobile": "9907454657",
+      "text": "sdfsdfsdf",
+      "avatar": "/images/testimonials/avatar.png"
+    },
+    {
+      "id": 7,
+      "name": "asd",
+      "rating": 2,
+      "mobile": "9907454657",
+      "text": "xcvxcvxcv",
+      "avatar": "/images/testimonials/avatar.png"
+    },
+    {
+      "id": 6,
+      "name": "sdfsdf",
+      "rating": 5,
+      "mobile": "9907454657",
+      "text": "gffdfgdfgdfgfdgfdg",
+      "avatar": "/images/testimonials/avatar.png"
+    },
+    {
+      "id": 5,
+      "name": "im testing",
+      "rating": 2,
+      "mobile": "9907454657",
+      "text": "dfgdfg",
+      "avatar": "/images/testimonials/avatar.png"
+    },
+    {
+      "id": 4,
+      "name": "imraj kamar",
+      "rating": 3,
+      "mobile": "9907454657",
+      "text": "asdasdasd",
+      "avatar": "/images/testimonials/avatar.png"
+    },
+    {
+      "id": 3,
+      "name": "Priya Sharma",
+      "location": "Mumbai",
+      "rating": 5,
+      "text": "An absolutely magical experience. The forest views from our room were breathtaking, and the staff made us feel like family.",
+      "avatar": "/images/testimonials/avatar.png"
+    },
+    {
+      "id": 2,
+      "name": "Rahul Verma",
+      "location": "Delhi",
+      "rating": 5,
+      "text": "Perfect weekend getaway. The spa treatments were world-class, and the food was exceptional. Can't wait to return!",
+      "avatar": "/images/testimonials/avatar.png"
+    },
+    {
+      "id": 1,
+      "name": "Ananya Patel",
+      "location": "Bangalore",
+      "rating": 5,
+      "text": "DurgBhumi Resort is a hidden gem. The nature trails, the peaceful ambiance, and the luxury rooms exceeded all expectations.",
+      "avatar": "/images/testimonials/avatar.png"
+    }
+  ]
+}

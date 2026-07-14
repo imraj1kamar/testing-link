@@ -1,0 +1,352 @@
+Project Work Flow + Folder Structure + Technical Wireframe (DurgBhumi Redesign)
+
+====================================
+1) PROJECT WORKFLOW (Delivery Plan)
+====================================
+
+Phase A — Discovery & Spec
+1. Confirm site goals
+   - Primary: brand + luxury resort marketing
+   - Primary conversion: “Quick Enquiry” form + “Brochure” download
+   - Secondary: accommodation exploration + gallery engagement
+2. Gather content sources
+   - Text: JSON in src/data/*.json (hero, about, rooms, etc.)
+   - Images: public/images/... (hero, dining, gallery, etc.)
+   - Documents: public/broucher/*.pdf
+3. SEO baseline checklist
+   - Metadata (title/description), OG/Twitter
+   - Canonical URLs
+   - JSON-LD schema (LodgingBusiness)
+
+Phase B — Architecture Setup (Next.js)
+4. Decide route structure (App Router)
+   - / (landing page sections)
+   - /about
+   - /accommodation (anchor-based interaction)
+   - /policies
+   - /api/contact (form submission)
+5. Define UI component boundaries
+   - Layout: src/app/layout.tsx
+   - Page sections: src/components/* (Hero, Property, Gallery, etc.)
+   - Data: src/data/*.json and src/lib/data.ts
+
+Phase C — Build UI (Marketing Sections)
+6. Implement hero & navigation
+   - Navbar uses hash links (#home/#about/#stay/...)
+   - Hero uses hero.json slides and Framer Motion transitions
+7. Implement content sections with consistent motion
+   - Ethos, Property, CuratedStays, InfinityPool, Amenities, Dining,
+     EventsHighlights, Gallery, NatureHighlights, NearbyAttractions
+8. Implement engagement systems
+   - Gallery modal lightbox + scroll-driven desktop horizontal gallery
+   - FloatingEnquiry drawer (desktop vertical tab + mobile floating button)
+
+Phase D — Content Pages
+9. About page
+   - Reads src/data/about.json
+   - Alternating image/text chapters with Framer Motion reveal
+10. Policies page
+   - Text-first layout with cards/tables
+
+Phase E — Backend / API
+11. Contact enquiry API
+   - Endpoint: src/app/api/contact/route.ts
+   - Uses nodemailer + SMTP credentials from environment
+
+Phase F — Quality Gates
+12. Lint + build + typecheck
+   - npm run lint
+   - npm run build
+13. Accessibility + performance checks
+   - Ensure Image uses next/image correctly
+   - Ensure modal locks scroll correctly
+   - Ensure forms validate client-side
+
+Phase G — Deployment
+14. Build and deploy to Vercel/hosting
+   - Ensure env vars: SMTP_USER, SMTP_PASS, NEXT_PUBLIC_SITE_URL
+
+====================================
+2) CURRENT FOLDER STRUCTURE (Recommended)
+====================================
+
+This project already follows a good Next.js App Router layout.
+Below is the recommended structure (and how it maps to what exists in your repo).
+
+durgbhumi-redesign/
+├─ public/
+│  ├─ images/
+│  │  ├─ hero/
+│  │  ├─ logo/
+│  │  ├─ amenities/
+│  │  ├─ attraction/
+│  │  ├─ dining/
+│  │  ├─ gallery/
+│  │  ├─ resort/
+│  │  ├─ testimonials/
+│  │  ├─ ... (other image groups)
+│  ├─ broucher/
+│  │  └─ DurgBhumi_Inquiry_Brochure.pdf
+│  ├─ favicon.ico
+│  ├─ manifest.webmanifest
+│  └─ ...svg icons
+│
+├─ src/
+│  ├─ app/
+│  │  ├─ layout.tsx                 (Root layout: fonts, Navbar/Footer/JSON-LD)
+│  │  ├─ page.tsx                   (Landing page sections)
+│  │  ├─ about/
+│  │  │  └─ page.tsx              (About content page)
+│  │  ├─ accommodation/
+│  │  │  └─ page.tsx              (Accommodation page)
+│  │  ├─ policies/
+│  │  │  └─ page.tsx              (Policies content page)
+│  │  └─ api/
+│  │     └─ contact/
+│  │        └─ route.ts          (POST enquiry -> nodemailer)
+│  │
+│  ├─ components/
+│  │  ├─ Navbar.tsx
+│  │  ├─ Footer.tsx
+│  │  ├─ Preloader.tsx
+│  │  ├─ FloatingEnquiry.tsx
+│  │  ├─ Hero.tsx
+│  │  ├─ Ethos.tsx
+│  │  ├─ Property.tsx
+│  │  ├─ CuratedStays.tsx
+│  │  ├─ InfinityPool.tsx
+│  │  ├─ Amenities.tsx
+│  │  ├─ Dining.tsx
+│  │  ├─ EventsHighlights.tsx
+│  │  ├─ Gallery.tsx
+│  │  ├─ NatureHighlights.tsx
+│  │  └─ NearbyAttractions.tsx
+│  │
+│  ├─ data/
+│  │  ├─ hero.json
+│  │  ├─ resort-data.json
+│  │  ├─ about.json
+│  │  ├─ propertyoverview.json
+│  │  ├─ rooms.json
+│  │  ├─ gallery.json
+│  │  ├─ diningHighlights.json
+│  │  ├─ eventsHighlights.json
+│  │  ├─ amenities.json
+│  │  └─ ... (one JSON per section)
+│  │
+│  ├─ lib/
+│  │  └─ data.ts                    (helper to transform/serve data if needed)
+│  │
+│  └─ types/
+│     └─ index.ts                  (shared types)
+│
+├─ README.md
+├─ TODO.md
+├─ package.json
+└─ next.config.ts
+
+Optional additions (recommended future structure)
+- src/styles/ (if you move global CSS/custom theme vars)
+- src/components/ui/ (small reusable UI building blocks)
+- src/components/sections/ (group marketing sections)
+
+====================================
+3) TECHNICAL WIREFRAME (Wireframe + Component Map)
+====================================
+
+Legend:
+- [Section] = visual section
+- (Component) = React/Next component file
+- -> = data source
+
+3.1 Global Layout (Root)
+--------------------------------
+Route: src/app/layout.tsx
+
+<html>
+  <body>
+    <script type="application/ld+json"> (JSON-LD LodgingBusiness)
+    <Preloader />
+    <Navbar />
+
+    <main>
+      {children} (route content)
+    </main>
+
+    <ScrollToTop />
+    <Footer />
+    <FloatingEnquiry />
+  </body>
+</html>
+
+3.2 Landing Page (Home) Wireframe
+--------------------------------
+Route: src/app/page.tsx
+
+[Hero] (Hero.tsx)
+- Background: hero.json slides -> Next/Image
+- Foreground: logo + tagline + CTA button -> link to #stay
+- Scroll indicator: animated arrow
+
+[Ethos] (Ethos.tsx)
+- Brand values cards + motion reveals
+
+[Property Overview] (Property.tsx)
+- Section header
+- Two-column layout
+  - Left: image + intro text -> propertyoverview.json
+  - Right: features grid -> propertyoverview.json
+
+[Curated Stays / Accommodation Preview] (CuratedStays.tsx)
+- Desktop (lg+): sticky full-height experience
+  - Background layers per room
+  - Foreground image stack
+  - Text slides synchronized with scroll progress
+- Mobile: stacked cards per room
+
+[Infinity Pool] (InfinityPool.tsx)
+- Media + feature highlights
+
+[Amenities] (Amenities.tsx)
+- Amenity tiles from amenities.json
+
+[Dining] (Dining.tsx)
+- Dining highlights from diningHighlights.json
+
+[Events Highlights] (EventsHighlights.tsx)
+- Event image/text cards
+
+[Gallery] (Gallery.tsx)
+- Mobile: masonry columns using CSS columns
+- Desktop: sticky horizontal scroll effect driven by scrollYProgress
+- Modal/lightbox
+  - Next/Prev navigation
+  - Body scroll locked while modal open
+
+[Nature Highlights] (NatureHighlights.tsx)
+- Scenic tiles
+
+[Nearby Attractions] (NearbyAttractions.tsx)
+- Cards/links to attractions -> attractions.json
+
+Conversion UI (persistent)
+- FloatingEnquiry (FloatingEnquiry.tsx)
+  - Trigger: desktop vertical tab + mobile bottom-right button
+  - Drawer: enquiry form
+  - Submit -> POST /api/contact
+
+Footer
+- Contact Us + Map iframe + phone/mail links
+
+3.3 About Page Wireframe
+--------------------------------
+Route: /about (src/app/about/page.tsx)
+
+[Hero Banner]
+- “Our Story” label
+- H1 = about.page_title -> about.json
+
+[Chapters (repeating blocks)]
+For each section in about.sections:
+- Left image (optional) + right text (or reversed for alternating chapters)
+- Motion: blur+translate reveals
+- If points exist -> rendered as bullet list
+- Else -> rendered paragraph content
+
+[Footer Quote]
+- about.footer_quote
+
+3.4 Policies Page Wireframe
+--------------------------------
+Route: /policies (src/app/policies/page.tsx)
+
+[Header]
+- “Resort Policies”
+
+[Policy Cards]
+- Meal Plans & Tariffs (cards)
+- Pet Policy (bullets)
+- Booking & Payment (sections)
+- Cancellation & Refund (tables + cards)
+
+3.5 Accommodation Page Wireframe (anchor-based)
+--------------------------------
+Route: /accommodation (based on existing components)
+
+- CuratedStays provides scroll/CTA to /accommodation#<room-name>
+- Expected behavior:
+  - accommodation page uses room data (rooms.json)
+  - each room has anchor IDs matching CTA
+
+3.6 API Wireframe (Enquiry form)
+--------------------------------
+POST /api/contact (src/app/api/contact/route.ts)
+
+Request JSON:
+{
+  name: string,
+  email: string,
+  phone: string,
+  subject: string,
+  message: string
+}
+
+Server:
+- Validate required fields (name/email/message)
+- Create nodemailer transporter with SMTP_USER/SMTP_PASS
+- Send email:
+  - to: booking@durgbhumi.com
+  - replyTo: user email
+- Return:
+  { success: true } or { success: false, message }
+
+====================================
+4) HOW TO USE THIS WORKFLOW
+====================================
+1. Follow Phase A -> Phase G in order.
+2. Add new marketing sections by:
+   - Create src/data/<new-section>.json
+   - Create src/components/<NewSection>.tsx
+   - Import into src/app/page.tsx
+3. Keep conversions consistent:
+   - Preserve FloatingEnquiry behavior
+   - Ensure Navbar hash targets exist
+
+====================================
+5) QUICK CHECKLIST (Implementation)
+====================================
+- [ ] Ensure ids for hash navigation: #home, #about, #stay, #dining, #gallery, #contact
+- [ ] Confirm CTA buttons scroll to correct anchors
+- [ ] Validate enquiry input fields
+- [ ] Ensure Gallery modal updates selected image index correctly
+- [ ] Run: npm run lint
+- [ ] Run: npm run build
+
+Libraries used (from package.json)
+
+Dependencies:
+- clsx: ^2.1.1
+- embla-carousel-react: ^8.6.0
+- framer-motion: ^12.40.0
+- lucide-react: ^1.21.0
+- next: 16.2.9
+- nodemailer: ^9.0.1
+- react: 19.2.4
+- react-dom: 19.2.4
+- tailwind-merge: ^3.6.0
+
+DevDependencies:
+- @tailwindcss/postcss: ^4
+- @types/node: ^20
+- @types/nodemailer: ^8.0.1
+- @types/react: ^19
+- @types/react-dom: ^19
+- babel-plugin-react-compiler: 1.0.0
+- eslint: ^9
+- eslint-config-next: 16.2.9
+- tailwindcss: ^4
+- typescript: ^5
+
+End of file.
+
+

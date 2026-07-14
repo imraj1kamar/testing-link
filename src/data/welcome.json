@@ -1,0 +1,17 @@
+{
+  "about": {
+    "heading": "Welcome to DurgBhumi ",
+    "subtext": "About",
+    "description": "Nestled on a serene hill slope in the Sahyadri ranges of Velhe, overlooking the calm waters of Gunjavani Dam, DurgBhumi Resort offers an experience rooted in nature, history, and quiet luxury.",
+    "longDescription": "With Torna Fort standing tall in the backdrop and the legendary forts of Rajgad, Sinhagad, Purandar, Raigad, and many more surrounding this historic belt, the name “DurgBhumi” truly reflects the spirit of the land. \n\nHere, every view carries a sense of heritage, every sunset paints the sky with golden reflections, and every moment invites you to slow down, breathe, and connect with the timeless beauty of the Sahyadris.",
+    "images": [
+      "/images/gallery/5.jpeg",
+      "/images/durg-bhumi-gallery/001.jpeg",
+      "/images/durg-bhumi-gallery/wada.jpeg",
+      "/images/hero/6.jpeg",
+      "/images/about/Facilities.jpg",
+      "/images/gallery/2.jpeg",
+      "/images/hero/03.jpeg"
+    ]
+  }
+}

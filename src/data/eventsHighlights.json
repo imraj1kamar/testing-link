@@ -1,0 +1,35 @@
+{
+  "title": "Weddings, Corporate & Private Events",
+  "subtitle": "Scenic settings for every celebration",
+  "description": "We offer a scenic and elegant setting for weddings, corporate gatherings, and private celebrations. Surrounded by the Sahyadri ranges, lake views, landscaped spaces, and heritage-inspired architecture, the resort creates a memorable backdrop for every occasion. \n\nFrom intimate wedding functions and family celebrations to corporate offsites, leadership meets, retreats, and curated private events, DurgBhumi blends warm hospitality, thoughtful planning, and a naturally beautiful environment to make every event truly special.",
+  "items": [
+    {
+      "id": 1,
+      "title": "Weddings & Family Celebrations",
+      "description": "Heritage-inspired spaces with breathtaking views—ideal for memorable ceremonies and gatherings."
+
+    },
+    {
+      "id": 2,
+      "title": "Corporate Offsites & Retreats",
+      "description": "Thoughtful planning with inspiring surroundings—leadership meets, workshops, and retreats."
+
+    },
+    {
+      "id": 3,
+      "title": "Private Celebrations",
+      "description": "Curated, elegant setups for anniversaries, gatherings, and special private events."
+     
+    }
+  ],
+  "image": [       
+       "/images/eventsHighlights/1.jpg",
+       "/images/eventsHighlights/2.jpg",
+       "/images/eventsHighlights/3.jpg",
+       "/images/eventsHighlights/4.jpeg",
+       "/images/eventsHighlights/5.jpeg",
+        "/images/eventsHighlights/6.jpeg",
+       "/images/eventsHighlights/7.jpeg"
+      ]
+}
+

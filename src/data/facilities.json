@@ -1,0 +1,80 @@
+{
+  "title": "Facilities & Activities",
+  "subtitle": "Explore the property facilities & services",
+  "description": "From celebrations and dining to wellness, indoor fun, and nature experiences—everything is designed for comfort, togetherness, and memorable stays.",
+  "items": [
+    {
+      "id": 1,
+      "title": "Restaurant",
+      "description": "On-site dining with a warm, inviting atmosphere.",
+      "icon": "restaurant"
+    },
+    {
+      "id": 2,
+      "title": "Banquet Hall for celebrations, retreats and events",
+      "description": "A dedicated space for gatherings, retreats, and special events.",
+      "icon": "meeting"
+    },
+    {
+      "id": 3,
+      "title": "Infinity Swimming pool with serene natural surroundings",
+      "description": "Relax by the water with calming views of nature.",
+      "icon": "pool"
+    },
+    {
+      "id": 4,
+      "title": "Lunch and dinner service (charged extra)",
+      "description": "Enjoy meals during your stay—available on an additional charge.",
+      "icon": "utensils"
+    },
+    {
+      "id": 5,
+      "title": "Indoor Games for kids and adults",
+      "description": "Fun for all ages with curated indoor activities.",
+      "icon": "games"
+    },
+    {
+      "id": 6,
+      "title": "Kids Play area",
+      "description": "A safe and enjoyable play space for children.",
+      "icon": "kids"
+    },
+    {
+      "id": 7,
+      "title": "Multiple landscaped lawns for social events",
+      "description": "Open, beautifully landscaped spaces for social moments and gatherings.",
+      "icon": "forest"
+    },
+    {
+      "id": 8,
+      "title": "Spa and yoga for holistic wellness",
+      "description": "Recharge with spa experiences and yoga for mind-body balance.",
+      "icon": "spa"
+    },
+    {
+      "id": 9,
+      "title": "Book reading section",
+      "description": "A quiet corner to unwind with books and peaceful reading time.",
+      "icon": "book"
+    },
+    {
+      "id": 10,
+      "title": "Natural waterfall (active in rainy seasons)",
+      "description": "Experience the magic of the falls during the monsoon.",
+      "icon": "water"
+    },
+    {
+      "id": 11,
+      "title": "Bonfire",
+      "description": "Evenings by the fire for warmth, stories, and togetherness.",
+      "icon": "fire"
+    },
+    {
+      "id": 12,
+      "title": "Camping",
+      "description": "Sleep under the stars and enjoy the outdoors.",
+      "icon": "camp"
+    }
+  ]
+}
+

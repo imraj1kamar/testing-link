@@ -1,0 +1,82 @@
+{
+  "pool_page": {
+    "hero": {
+      "title": "Infinity Pool",
+      "subtitle": "Where the blue meets the valley.",
+      "background_image": "/images/pools/_65A4480.jpg"
+    },
+    "experience": {
+      "heading": "The Horizon Edge",
+      "description": "Float amidst the clouds and connect with the silence of the valley. Our infinity pool is designed to blur the line between resort luxury and the raw beauty of the wilderness. Whether it’s the golden morning mist or the starlit evening sky, our infinity pool offers a serene retreat from the world. Immerse yourself in the tranquility of nature.",
+      "image": {
+        "src": "/images/pools/3.jpg",
+        "alt": "Wide view of guests enjoying the infinity pool against the Gunjavani dam"
+      }
+    },
+    "amenities": {
+      "heading": "Curated For Your Comfort",
+      "items": [
+        {
+          "title": "Fresh Pool Towels",
+          "desc": "Plush, warm towels provided fresh for every dip."
+        },
+        {
+          "title": "Sun Loungers",
+          "desc": "Ergonomic seating to relax and soak in the Sahyadri sun."
+        },
+        {
+          "title": "Safety & Hygiene",
+          "desc": "Immaculately maintained waters with the highest hygiene standards."
+        },
+        {
+          "title": "Evening Mood Lighting",
+          "desc": "Ambient underwater lights for a magical night swim."
+        }
+      ]
+    },
+    "gallery": {
+      "heading": "Azure Valley Escape",
+      "images": [
+        { 
+          "src": "/images/pools/_65A4480.jpg", 
+          "alt": "Wide shot of the pool pavilion",
+          "desc": "Panoramic views of the Sahyadri mountains from our infinity edge."
+        },
+        { 
+          "src": "/images/pools/_65A4740.jpg", 
+          "alt": "Tropical refreshment at the pool",
+          "desc": "Sip on signature tropical refreshments as you soak in the valley breeze."
+        },
+     { 
+  "src": "/images/pools/_65A4732.jpg", 
+  "alt": "Guest dipping foot in the cool pool water",
+  "desc": "Dip your toes into serenity and let the cooling waters wash away your everyday stress."
+},
+        { 
+          "src": "/images/pools/6.png", 
+          "alt": "Scenic view of Gunjavani Dam",
+          "desc": "Uninterrupted vistas of the tranquil Gunjavani dam right from the resort."
+        },
+        { 
+          "src": "/images/pools/_65A4730.jpg", 
+          "alt": "Guest relaxing with champagne",
+          "desc": "Golden hour lounging with premium hospitality at your fingertips."
+        },
+        { 
+          "src": "/images/pools/_65A4686.jpg", 
+          "alt": "Guest holding a drink in the pool",
+          "desc": "Unwind and recharge in the pristine, temperature-perfect waters."
+        },
+        {
+    "src": "/images/pools/pool-view.png",
+    "alt": "Breathtaking golden sunset reflecting on the infinity pool",
+    "desc": "Witness the sky catch fire. A mesmerizing golden hour reflection at our infinity edge."
+  }
+      ]
+    },
+    "cta": {
+      "heading": "Ready to dive into serenity?",
+      "button_text": "Book Your Stay"
+    }
+  }
+}

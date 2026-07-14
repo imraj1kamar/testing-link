@@ -1,0 +1,61 @@
+{
+  "attractions": [
+    {
+      "id": 1,
+      "name": "Torna Fort Trekking*",
+      "description": "Embark on a thrilling trek to Torna Fort (Prachandagad), known for its historic significance and panoramic viewpoints. Experience heritage trails, fresh mountain air, and breathtaking Sahyadri scenery.",
+      "distance": "25 km",
+      "image": "/images/attraction/03.png"
+    },
+    {
+      "id": 2,
+      "name": "Madhe Ghat Waterfall (spot near Velhe)",
+      "description": "Enjoy a monsoon escape to Madhe Ghat Waterfall—famous for cascading falls, misty trails, and lush greenery around Velhe. Perfect for nature lovers and photography during rains.",
+      "distance": "15 km",
+      "image": "/images/attraction/02.png"
+    },
+    {
+      "id": 3,
+      "name": "Rajgad Fort (Velhe belt)",
+      "description": "Explore Rajgad Fort, one of Maharashtra’s most grand forts, set along scenic trekking routes. Discover Maratha heritage with rewarding views and rewarding outdoor walks.",
+      "distance": "30 km",
+      "image": "/images/attraction/04.png"
+    },
+    {
+      "id": 4,
+      "name": "Panshet Dam / lake views & leisure",
+      "description": "Spend a relaxing day at Panshet Dam with calm lake views, leisure time, and outdoor photo moments. A peaceful destination for unwinding in nature.",
+      "distance": "20 km",
+      "image": "/images/attraction/05.png"
+    },
+    {
+      "id": 5,
+      "name": "Star Gazing: in Pabe Ghat, Kadve ghat",
+      "description": "Witness clear night skies with a serene star-gazing experience at Pabe Ghat and Kadve Ghat. Enjoy a quiet evening away from city lights with unforgettable celestial views.",
+      "distance": "—",
+      "image": "/images/attraction/06.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Waterfall Rapelling",
+      "description": "Get an adrenaline boost with waterfall rapelling—an exciting adventure experience for thrill seekers. Enjoy guided safety and unforgettable moments by the falls.",
+      "distance": "—",
+      "image": "/images/attraction/7.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Fishing  : In Gunjavni Dam or Panshet Backwaters",
+      "description": "Try a relaxing fishing experience at Gunjavni Dam—calm waters, peaceful surroundings, and a great local activity for nature lovers.",
+      "distance": "—",
+      "image": "/images/attraction/8.jpg"
+    },
+ 
+    {
+      "id": 8,
+      "name": "Bullock Cart Ride: Resort to Bhatti Village",
+      "description": "Experience a traditional bullock cart ride from the resort to Bhatti village—slow travel, countryside sights, and a memorable cultural ride.",
+      "distance": "—",
+      "image": "/images/attraction/9.jpg"
+    }
+  ]
+}

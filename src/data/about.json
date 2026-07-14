@@ -1,0 +1,49 @@
+{
+  "about_us": {
+    "page_title": "Our Story",
+    "background_url": "/images/about/Facilities.jpg",
+    "sections": [
+      {
+        "id": "intro",
+        "heading": "DurgBhumi: The Land of Forts",
+        "content": "The word \"DurgBhumi\" translates to 'The Land of Forts'. Nestled in the serene hills of Velhe and the lap of the vast Sahyadri mountain range, overlooking the calm waters of the Gunjavani Dam, DurgBhumi Resort is not just a place to stay, but a complete experience. With the magnificent Torna Fort standing proudly right behind our resort, and the heritage of historical forts like Rajgad, Sinhagad, Purandar, and Raigad surrounding us, this place is bestowed with a unique soul. Our name perfectly reflects the valor and history of this sacred land.",
+        "image": {
+          "image_url": "/images/about/accommodation.png",
+          "alt_text": "Fort mountain view through traditional wooden jharokha"
+        }
+      },
+      {
+        "id": "vision-mission",
+        "heading": "Our Vision & Mission",
+        "points": [
+          "Our goal is to give you an exceptional experience of nature, history, and quiet luxury.",
+          "DurgBhumi is built on the ethos that \"Some land was always meant to be returned\".",
+          "We want every guest who visits here to take a break from their daily hustle, breathe in the open air, and reconnect with the infinite beauty of the Sahyadris."
+        ],
+        "image": {
+          "image_url": "/images/about/2.jpg",
+          "alt_text": "Staff offering authentic Maharashtrian traditional welcome"
+        }
+      },
+      {
+        "id": "heritage-comfort",
+        "heading": "A Beautiful Blend of Heritage and Comfort",
+        "content": "When we built DurgBhumi, our aim was to preserve the essence of Maharashtra's soil. That is why the architecture here is deeply inspired by the traditional Maharashtrian 'Wada' style. Whether you choose our Wada stay, Machi, Osri, or the elevated Machan, every room gives you a feel of old-world grandeur perfectly balanced with modern luxury.",
+        "image": {
+          "image_url": "/images/about/hritage-comfert.jpeg",
+          "alt_text": "DurgBhumi Resort Wada style exterior at sunset"
+        }
+      },
+     {
+        "id": "closer-to-nature",
+        "heading": "A New World Closer to Nature",
+        "content": "The true identity of DurgBhumi is its peaceful environment and the vibrant nature surrounding it. The cool breezes from the Gunjavani Dam, the sweet sound of the 'Owl Valley Waterfalls', and the chirping of Swallows (Tarwali Pakoli) and Swifts flying around bring this place to life. Every sunset here fills the sky with golden hues, creating a memory that will stay in your heart forever.",
+        "image": {
+          "image_url": "/images/about/sunset-relax.jpeg",
+          "alt_text": "Guest relaxing by the Gunjavani Dam at sunset"
+        }
+      }
+    ],
+    "footer_quote": "Welcome to DurgBhumi—where there is heritage in every view, and peace in every moment!"
+  }
+}

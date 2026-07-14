@@ -1,0 +1,43 @@
+{
+"title": "Amenities",
+"subtitle": "Within the room amenities",
+"description": "Everything you need for a perfect stay, from fine dining to wellness and adventure.",
+
+  "amenities": [
+  
+    {
+
+      "id": 1,
+      "title": "King & Queen style bed  s",
+      "description": "Attached washrooms | Sofa cum bed | Tea/coffee amenities and water | Wifi | AC | Intercoms",
+      "icon": "bed"
+    },
+    {
+      "id": 2,
+      "title": "Outdoor sitouts",
+      "description": "Iron and Iron board (on request) | Toiletries (wet and dry)",
+      "icon": "outdoor"
+    },
+    {
+      "id": 3,
+      "title": "Study & living essentials",
+      "description": "Study table | Coffee table | Mini fridge | Hot water kettle | Torch | Extra duvet",
+      "icon": "desk"
+    },
+    {
+      "id": 4,
+      "title": "Luxury Room Comfort",
+      "description": "Premium stay experience with heritage-inspired interiors and modern facilities",
+      "icon": "luxury"
+    }
+  ],
+
+  "commonImages": [
+    "/images/amenities/1.jpeg",
+    "/images/amenities/2.jpeg",
+    "/images/amenities/3.jpeg",
+    "/images/amenities/4.jpeg"
+  ]
+}
+
+

@@ -1,0 +1,87 @@
+{
+  "title": "Accommodation",
+  "subtitle": "Some land was always meant to be returned",
+  "roomsIntro": "DurgBhumi Resort features beautifully designed accommodations inspired by the heritage, landscapes, and cultural charm of Maharashtra. Each stay offers a peaceful blend of luxury, comfort, and nature surrounded by the majestic Sahyadri landscape.",
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Wada",
+      "roomNumbers": "(Room no 101 to 104)",
+      "tagline": "Traditional Maharashtrian Heritage Stay",
+      "description": "Designed in traditional Maharashtrian Wada style. With heritage-inspired architecture, warm earthy finishes, spacious interiors, and cultural detailing, the Wada offers guests a luxurious stay rooted in the charm and grandeur of Maharashtra's timeless courtyard homes.",
+      "price": "Tariff @15000 + 18% taxes",
+      "inclusions": "(complementary breakfast included)",
+      "perNight": "(per night per room double occupancy)",
+      "extraPersonCharges": "Extra adult charges: Age (0-10) no charge, 10 years and above – 3000/- + taxes",
+      "images": [
+        "/images/wada/1.jpeg",
+        "/images/wada/2.jpeg",
+        "/images/wada/3.jpeg"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Machi (1)",
+      "roomNumbers": "Room 201",
+      "tagline": "Lake & Garden View Fort Retreat",
+      "description": "Offering beautiful views of the lake and garden from its private deck. Inspired by the fort-side terraces of the Sahyadris, the room blends heritage charm with modern comfort, creating a peaceful space to relax, unwind, and enjoy the natural beauty of DurgBhumi Resort.",
+      "price": "Tariff @16500 + 18% taxes",
+      "inclusions": "(complementary breakfast included)",
+      "perNight": "(per night per room double occupancy)",
+      "extraPersonCharges": "Extra adult charges: Age (0-10) no charge, 10 years and above – 3000/- + taxes",
+      "images": [
+        "/images/machi/1.jpeg",
+        "/images/machi/2.jpg",
+        "/images/machi/3.jpeg"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Machi (2)",
+      "roomNumbers": "Room 202",
+      "tagline": "Lotus Pond Veranda Serenity",
+      "description": "A cozy and charming room designed for a peaceful stay at DurgBhumi Resort. With a beautiful veranda overlooking the lotus pond, the room offers a calm setting to relax, unwind, and enjoy quiet moments surrounded by nature.",
+      "price": "Tariff @12500 + 18% taxes",
+      "inclusions": "(complementary breakfast included)",
+      "perNight": "(per night per room double occupancy)",
+      "extraPersonCharges": "Extra adult charges: Age (0-10) no charge, 10 years and above – 3000/- + taxes",
+      "images": [
+        "/images/machi/5.jpeg",
+        "/images/machi/6.jpeg",
+        "/images/machi/7.jpeg"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Osri",
+      "roomNumbers": "(Room no 301, 302, 305, 306)",
+      "tagline": "Heritage Verandah Retreat",
+      "description": "Inspired by the traditional verandah-style spaces of Maharashtrian Wada architecture. Designed with warm interiors, heritage touches, and a calm sit-out feel, these rooms offer guests a comfortable stay.",
+      "price": "Tariff @11500 + 18% taxes",
+      "inclusions": "(complementary breakfast included)",
+      "perNight": "(per night per room double occupancy)",
+      "extraPersonCharges": "Extra adult charges: Age (0-10) no charge, 10 years and above – 3000/- + taxes",
+      "images": [
+        "/images/machan/1.jpeg",
+        "/images/machan/2.jpeg",
+        "/images/machan/4.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Machan",
+      "roomNumbers": "(Room no 303, 304, 307, 308)",
+      "tagline": "Elevated Deck Views & Quiet Luxury",
+      "description": "Thoughtfully designed as elevated retreats overlooking the serene lake. Inspired by the idea of a traditional viewing deck, these rooms offer a peaceful stay with beautiful water views, natural surroundings, and a sense of quiet luxury.",
+      "price": "Tariff @12500 + 18% taxes",
+      "inclusions": "(complementary breakfast included)",
+      "perNight": "(per night per room double occupancy)",
+      "extraPersonCharges": "Extra adult charges: Age (0-10) no charge, 10 years and above – 3000/- + taxes",
+      "images": [
+        "/images/machan/5.jpeg",
+        "/images/machan/9.jpeg",
+        "/images/machan/7.jpeg"
+      ]
+    }
+  ]
+}

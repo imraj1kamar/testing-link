@@ -1,0 +1,62 @@
+{
+  "title": "Infinity Swimming Pool",
+  "subtitle": "Lazy dips with views of green valleys",
+  "description": "Take a long, lazy dip in our infinity swimming pool—where green valleys, golden sunset, and tall trees are your company.",
+  "content": {
+    "left": {
+      "heading": "Infinity Swimming Pool",
+      "text": "Take a long, lazy dip with just the green valleys, golden sunset and tall trees for company.",
+      "bullets": [
+        "Serene infinity pool experience",
+        "Scenic views of valleys, trees, and open skies",
+        "Golden-hour swims with warm sunset tones",
+        "A calm, relaxing escape from everyday rush",
+        "Gentle water reflections for perfect photo moments",
+        "Slow mornings with fresh air and quiet ambience",
+        "Peaceful evenings—ideal for unwinding and recharging",
+        "Nature-filled surroundings for a truly immersive stay",
+        "Comfortable lounging vibes after a refreshing dip",
+        "Privacy and tranquility for couples and families"
+      ]
+    },
+    "right": {
+      "heading": "Pool Moments",
+      "images": [
+        
+        {
+          "id": 1,
+          "src": "/images/pools/pool-view.png",
+          "alt": "Infinity swimming pool view"
+        },
+        {
+          "id": 2,
+          "src": "/images/pools/2.jpg",
+          "alt": "Infinity pool ambience"
+        },
+        {
+          "id": 3,
+          "src": "/images/pools/3.jpg",
+          "alt": "Relaxing by the infinity pool"
+        },
+        {
+          "id": 4,
+          "src": "/images/pools/4.jpeg",
+          "alt": "Pool surrounded by nature"
+        },
+         {
+          "id": 5,
+          "src": "/images/pools/5.jpeg",
+          "alt": "Pool surrounded by nature"
+        },
+         {
+          "id": 6,
+          "src": "/images/pools/1.jpg",
+          "alt": "Pool surrounded by nature"
+        }
+        
+       
+      ]
+    }
+  }
+}
+

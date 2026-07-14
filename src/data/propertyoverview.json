@@ -1,0 +1,59 @@
+{
+  "title": "Property Overview",
+  "intro": {
+    "heading": "The Place",
+    "description": "Step into a space where comfort meets elegance. Designed to inspire productivity and meaningful connections, this environment offers a perfect balance of style, functionality, and warmth. Whether for meetings, collaboration, or everyday experiences, every detail is crafted to leave a lasting impression."
+  },
+  "image": {
+    "src": "/images/about/file_0.png",
+    "alt": "overview"
+   
+  },
+  "features": {
+    "sections": [
+      {
+        "title": "Lawn Area",
+        "items": [
+          { "letter": "B", "text": "Owl Valley Lawn-1" },
+          { "letter": "C", "text": "Owl Valley Lawn-2" },
+          { "letter": "E", "text": "Chavni / Bonfire Area" },
+          { "letter": "G", "text": "Kadamb" },
+          { "letter": "N", "text": "Shamiyana" }
+        ]
+      },
+      {
+        "title": "Dining ",
+        "items": [
+          { "letter": "K", "text": "Restaurant " },
+          { "letter": "F", "text": "Duplex" }
+        ],
+        "subSections": [
+          {
+            "title": "Fun Activities",
+            "items": [
+              { "letter": "I", "text": "Infinity Pool & Spa" },
+              { "letter": "A", "text": "Owl Valley Waterfalls" }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Function Area",
+        "items": [
+          { "letter": "M", "text": "Wada" },
+          { "letter": "J", "text": "Banquet Hall" },
+          { "letter": "L", "text": "Wada event outside area" },
+          { "letter": "D", "text": "Back event area with Torna View" }
+        ]
+      },
+      {
+        "title": "Entry",
+        "items": [
+          { "letter": "O", "text": "Parking" },
+          { "letter": "H", "text": "Reception" }
+        ]
+      }
+    ]
+  }
+}
+

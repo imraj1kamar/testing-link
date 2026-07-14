@@ -1,0 +1,41 @@
+{
+  "slides": [
+    {
+      "id":1,
+      "src":"/images/gallery/2.jpeg"
+
+    },
+    {
+      "id": 2,
+      "src": "/images/hero/1.jpg"
+
+    },
+    {
+      "id": 3,
+      "src": "/images/hero/2.jpg"
+
+    },
+    {
+      "id": 4,
+      "src": "/images/hero/6.jpeg"
+
+    },
+   
+     {
+      "id": 5,
+      "src": "/images/hero/4.jpg"
+
+    }, {
+      "id": 6,
+      "src": "/images/hero/5.jpg"
+
+    }, 
+    {
+      "id": 7,
+      "src": "/images/hero/03.jpeg"
+
+    }
+  ]
+}
+
+

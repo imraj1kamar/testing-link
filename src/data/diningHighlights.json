@@ -1,0 +1,33 @@
+{
+  "title": "Dining",
+  "subtitle": "Marathi-inspired flavours & warm hospitality",
+  "items": [
+    {
+      "id": 1,
+      "title": "Authentic Thalis",
+      "description": "Curated thalis inspired by regional recipes—comforting, balanced, and made with seasonal ingredients sourced locally.",
+      "images": [
+        "/images/dining/mutton-thali.jpg",
+        "/images/dining/veg-thali.png"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Chef's Signature",
+      "description": "A beautifully plated chef-special creation featuring rich flavours, seasonal vegetables, and refined culinary techniques.",
+      "images": [
+        "/images/dining/3.jpg",
+        "/images/dining/6.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Morning Classics",
+      "description": "Freshly prepared breakfast favourites served with wholesome ingredients, vibrant flavours, and a touch of comfort.",
+      "images": [
+        "/images/dining/8.jpg",
+        "/images/dining/7.jpg"
+      ]
+    }
+  ]
+}

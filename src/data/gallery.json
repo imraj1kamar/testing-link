@@ -1,0 +1,104 @@
+{
+  "gallery": [
+    {
+      "id": 1,
+      "src": "/images/durg-bhumi-gallery/wada.jpeg",
+      "alt": "Resort Exterior",
+      "category": "resort"
+    },
+    {
+      "id": 2,
+      "src": "/images/durg-bhumi-gallery/luxery-room.jpeg",
+      "alt": "Luxury Room",
+      "category": "rooms"
+    },
+    {
+      "id": 3,
+      "src": "/images/durg-bhumi-gallery/garden-area.jpeg",
+      "alt": "Garden View",
+      "category": "nature"
+    },
+    {
+      "id": 4,
+      "src": "/images/durg-bhumi-gallery/morning-view.jpeg",
+      "alt": "Morning View",
+      "category": "resort"
+    },
+    {
+      "id": 5,
+      "src": "/images/durg-bhumi-gallery/room-view.jpeg",
+      "alt": "Room View",
+      "category": "rooms"
+    },
+    {
+      "id": 6,
+      "src": "/images/durg-bhumi-gallery/sun-set-view.jpeg",
+      "alt": "Sunset View",
+      "category": "nature"
+    },
+    {
+      "id": 7,
+      "src": "/images/durg-bhumi-gallery/room2.jpeg",
+      "alt": "Deluxe Room",
+      "category": "rooms"
+    },
+    {
+      "id": 8,
+      "src": "/images/durg-bhumi-gallery/washroom.jpeg",
+      "alt": "Washroom",
+      "category": "amenities"
+    },
+    {
+      "id": 9,
+      "src": "/images/gallery/1.jpg",
+      "alt": "Room View",
+      "category": "Wada Rooms"
+    },  
+    {
+      "id": 10,
+      "src": "/images/gallery/2.jpeg",
+      "alt": "Hill view",
+      "category": "Nature View"
+    },  
+    {
+      "id": 11,
+      "src": "/images/gallery/3.jpeg",
+      "alt": "Suite Room",
+      "category": "Suite Room"
+    },
+    {
+      "id": 12,
+      "src": "/images/gallery/4.jpeg",
+      "alt": "Wada Entrance",
+      "category": "Wada Entrance"
+    },  
+      {
+        "id": 13,
+        "src": "/images/gallery/5.jpeg",
+        "alt": "Wada ",
+        "category": "Wada Sitting Area"
+      },
+      {
+        "id": 14,
+        "src": "/images/gallery/6.jpeg",
+        "alt": "Garden Area",
+        "category": "Garden Area"
+      },
+      {
+        "id": 16,
+        "src": "/images/gallery/8.jpeg",
+        "alt": "DurgBhumi ",
+        "category": "DurgBhumi Entrance"
+      },
+    
+      {
+        "id": 18,
+        "src": "/images/gallery/10.jpeg",
+        "alt": "Machi Area",
+        "category": "Machi Area"
+      } 
+
+
+  ]
+}
+

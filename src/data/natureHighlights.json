@@ -1,0 +1,24 @@
+{
+  "title": "Nature Highlights",
+  "subtitle": "Birdwatching & Waterfall Escapes",
+  "description": "Experience DurgBhumi through its living birdlife and seasonal waterfall moments—quiet, refreshing, and unforgettable.",
+  "items": [
+    {
+      "id": 1,
+      "title": "Birdwatching",
+      "description": "For me, however, the true essence of Durgbhumi lies in the nature and birdlife around it. When you pause here quietly and begin listening to the sounds around you, you immediately realise how alive this place truly is. \n\nA special attraction around Durgbhumi is the presence of swallows and swifts. The Wire-tailed Swallow (Tarwali Pakoli) is often seen here. Along with it, the Eastern Red-rumped Swallow (Lalbudhi Bhingari) and other swallows can be seen constantly moving through the air. Their nests can be seen lined along the resort buildings, under roofs and in safe corners.",
+      "backgroundImage": "/images/natureHighlights/1.jpg",
+      "imageClass": "imageVariant1",
+      "barColor": "/images/natureHighlights/barcode.png",
+      "url": "https://www.vatadya.in/2026/05/durgbhumi.html"
+    },
+    {
+      "id": 2,
+      "title": "Owl Valley Waterfalls",
+      "description": "Hidden within the natural landscape of DurgBhumi Resort, Owl Valley Waterfalls come alive with the first rains, creating a refreshing seasonal escape for guests. Surrounded by lush greenery and the sounds of flowing water, this natural waterfall area offers a unique experience where guests can take a dip, relax, and enjoy nature at its purest.",
+      "backgroundImage": "/images/natureHighlights/2.jpeg",
+      "imageClass": "imageVariant2"
+    }
+  ]
+}
+

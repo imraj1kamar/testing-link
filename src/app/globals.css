@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+:root {
+  /* 🌿 Deep Earth & Forest Tones (Kaapi Vana & Orchid Inspired) */
+  --bg-base: #0B0E0C;      /* Very deep forest charcoal (Not pure black) */
+  --bg-surface: #141A16;   /* Slightly lighter for cards/sections */
+  --bg-warm: #1A1713;      /* Subtle warm earthy tone for gradients */
+
+  /* 🌿 Typography Colors (No pure whites for luxury feel) */
+  --text-primary: #F0EDE6; /* Warm off-white / Creamy */
+  --text-secondary: #AFAAA0; /* Muted beige-grey for descriptions */
+
+  /* 🌿 Luxury Accents (Champagne & Bronze Gold instead of bright yellow) */
+  --gold-light: #E8D3A2;
+  --gold-primary: #C5A870;
+  --gold-dark: #8C7345;
+}
+
+body {
+  /* background-color: var(--bg-base); */
+  color: var(--text-primary);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  /* Soft text rendering for premium magazine feel */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 🌟 Premium Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-base);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(197, 168, 112, 0.2); /* Subtle champagne gold */
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-primary);
+}
+
+/* 🌟 Selection Color */
+::selection {
+  background: rgba(197, 168, 112, 0.2);
+  color: var(--gold-light);
+}
+
+/* 🌟 REFINED: Ultra-Luxury Glass Card 
+   (Softer blur, deeper background, subtle GOLDEN border instead of white) */
+@utility glass-card {
+  background: linear-gradient(145deg, rgba(20, 26, 22, 0.6) 0%, rgba(11, 14, 12, 0.8) 100%);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  /* Muted gold highlights on top/left for a sophisticated 3D pop */
+  border: 1px solid rgba(197, 168, 112, 0.08); 
+  border-top: 1px solid rgba(197, 168, 112, 0.18);
+  border-left: 1px solid rgba(197, 168, 112, 0.12);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+/* 🌟 REFINED: Sophisticated Gold Text (Muted, richer tones) */
+@utility gold-text-gradient {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(110deg, var(--gold-light) 0%, var(--gold-primary) 50%, var(--gold-dark) 100%);
+  /* Softer, deeper shadow */
+  filter: drop-shadow(0px 3px 4px rgba(0,0,0,0.7));
+}
+
+/* 🌟 Ambient Glow (Soft Champagne glow instead of harsh yellow) */
+@utility ambient-glow {
+  box-shadow: 0 0 100px 40px rgba(197, 168, 112, 0.08);
+}
+
+
+/* 🌟 THE "CINEMATIC" ENHANCEMENTS */
+
+/* 1. Global Noise/Grain Overlay for "Film" look */
+@utility atmosphere-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png"); /* Subtle particles */
+  opacity: 0.15;
+}
+
+/* 2. Refined Luxury Glass Card */
+@utility glass-card {
+  /* Richer background with deeper transparency */
+  background: linear-gradient(135deg, rgba(20, 26, 22, 0.4) 0%, rgba(11, 14, 12, 0.7) 100%);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  
+  /* Dual-border for "Cut Glass" depth */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  
+  /* Deep layered shadow */
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.9), 
+              inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+/* New custom class for the gradient background */
+.bg-primary-gradient {
+  background: linear-gradient(to br, #121814, #111c15, #0d1410);
+}

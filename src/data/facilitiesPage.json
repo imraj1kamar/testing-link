@@ -1,0 +1,52 @@
+{
+  "facilities_page": {
+    "hero": {
+      "title": "Curated Experiences",
+      "subtitle": "Comfort, Togetherness, and Memorable Stays",
+      "background_image": "/images/facilities/_65A4826.jpg" 
+    },
+    "sections": [
+         {
+        "id": 1,
+        "title": "Holistic Wellness & Yoga",
+        "description": "Recharge your mind and body. Find your center with our outdoor yoga sessions amidst the calming embrace of nature, breathing in the pure mountain air.",
+        "image": {
+          "src": "/images/facilities/_65A5109.jpg",
+          "alt": "Outdoor morning yoga session"
+        }
+      },
+     
+      {
+        "id": 2,
+        "title": "Infinity Swimming Pool",
+        "description": "Float seamlessly between the resort's luxury and the raw beauty of the wilderness. A tranquil escape offering breathtaking views of the valley.",
+        "image": {
+          "src": "/images/facilities/pool-view.png",
+          "alt": "Golden sunset reflecting on the infinity pool"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Indoor Recreation",
+        "description": "Step away from the screens and relive golden memories. Our cozy indoor lounge is equipped with classic board games, perfect for lazy afternoons and family bonding.",
+        "image": {
+          "src": "/images/facilities/_65A5168.jpg",
+          "alt": "Guests playing Jenga indoors"
+        }
+      },
+      {
+        "id":4 ,
+        "title": "Bonfire Celebrations",
+        "description": "Gather around the warmth of a crackling fire. Share untold stories, pour a glass of fine wine, and celebrate the crisp Sahyadri nights with your loved ones.",
+        "image": {
+          "src": "/images/facilities/_65A4866.jpg",
+          "alt": "Group of friends enjoying wine by the bonfire"
+        }
+      }
+    ],
+    "cta": {
+      "heading": "Ready to experience DurgBhumi?",
+      "button_text": "Plan Your Stay"
+    }
+  }
+}
