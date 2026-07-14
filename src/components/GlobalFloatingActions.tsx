@@ -1,8 +1,8 @@
 // "use client";
 
-// import { useState } from "react";
-// import { motion } from "framer-motion";
-// import { MessageCircle, Map as MapIcon, Phone } from "lucide-react";
+// import { useState, useRef, useEffect } from "react";
+// import { motion, AnimatePresence } from "framer-motion";
+// import { MessageCircle, Map as MapIcon, Phone, Plus, X } from "lucide-react";
 // import InteractiveMapModal from "@/components/InteractiveMapModal";
 
 // const mapLocationsData = [
@@ -13,7 +13,6 @@
 //     x: "55.00%",
 //     y: "75.00%",
 //     image: "/images/gallery/8.jpeg",
-
 //   },
 //   // --- Lawn Area ---
 //   {
@@ -48,14 +47,6 @@
 //     y: "70.00%",
 //     image: "/images/facilities/_65A5186.jpg",
 //   },
-//   // {
-//   //   id: "lawn-shamiyana",
-//   //   title: "Shamiyana",
-//   //   desc: "Elegant seating zone for celebrations.",
-//   //   x: "26.00%",
-//   //   y: "30.00%",
-//   //   image: "/images/facilities/_65A4866.jpg",
-//   // },
 
 //   // --- Dining ---
 //   {
@@ -181,56 +172,153 @@
 
 // export default function GlobalFloatingActions({ phone, whatsappMessage }: { phone: string, whatsappMessage?: string }) {
 //   const [isMapOpen, setIsMapOpen] = useState(false);
+//   const [isMenuOpen, setIsMenuOpen] = useState(false); // Mobile Menu State
 
 //   const cleanPhone = phone.replace(/\s+/g, '').replace(/[^0-9\+]/g, '');
 //   const defaultMessage = whatsappMessage || "Hello DurgBhumi Resort, I would like to know more about the bookings.";
 
 //   const handleWhatsapp = () => {
 //     window.open(`https://wa.me/${cleanPhone}?text=${encodeURIComponent(defaultMessage)}`, "_blank");
+//     setIsMenuOpen(false);
 //   };
 
 //   const handleCall = () => {
 //     window.location.href = `tel:${cleanPhone}`;
+//     setIsMenuOpen(false);
+//   };
+
+//   const handleMapOpen = () => {
+//     setIsMapOpen(true);
+//     setIsMenuOpen(false);
+//   };
+
+//   // Close menu if user scrolls
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       if (isMenuOpen) setIsMenuOpen(false);
+//     };
+//     window.addEventListener("scroll", handleScroll, { passive: true });
+//     return () => window.removeEventListener("scroll", handleScroll);
+//   }, [isMenuOpen]);
+
+//   // Framer motion variants for mobile stagger animation
+//   const menuVariants = {
+//     closed: { opacity: 0, y: 20, scale: 0.8, transition: { duration: 0.2 } },
+//     open: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.3, type: "spring", stiffness: 300, damping: 24 } }
 //   };
 
 //   return (
 //     <>
-//       {/* 🔥 FIX: Changed from right-6 bottom-24 to left-6 bottom-8 */}
-//       <div className="fixed bottom-8 left-6 md:bottom-10 md:left-8 z-[90] flex flex-col gap-4">
+//       {/* Invisible Overlay to close menu when clicked outside (Mobile only) */}
+//       {isMenuOpen && (
+//         <div 
+//           className="md:hidden fixed inset-0 z-[80] bg-transparent" 
+//           onClick={() => setIsMenuOpen(false)}
+//         />
+//       )}
+
+//       {/* Main Container */}
+//       <div className="fixed bottom-8 left-6 md:bottom-10 md:left-8 z-[90] flex flex-col-reverse md:flex-col gap-4">
         
-//         {/* Contact/Call Button */}
-//         {/* 🔥 FIX: Hover animation x: 5 kar diya (Left se aage aayega) */}
-//         <motion.button
-//           whileHover={{ scale: 1.1, x: 5 }}
-//           whileTap={{ scale: 0.9 }}
-//           onClick={handleCall}
-//           className="cursor-pointer w-11 h-11 md:w-12 md:h-12 rounded-full glass-card border border-[var(--gold-primary)]/30 flex items-center justify-center shadow-xl hover:shadow-[0_0_20px_rgba(184,134,11,0.2)] transition-all bg-black/60 backdrop-blur-md"
-//           title="Call Us"
-//         >
-//           <Phone className="w-5 h-5 text-[var(--gold-dark)]" />
-//         </motion.button>
+//         {/* 🌟 DESKTOP VIEW (Default: All buttons visible) */}
+//         <div className="hidden md:flex flex-col gap-4">
+//           <motion.button
+//             whileHover={{ scale: 1.1, x: 5 }}
+//             whileTap={{ scale: 0.9 }}
+//             onClick={handleCall}
+//             className="cursor-pointer w-12 h-12 rounded-full glass-card border border-[var(--gold-primary)]/30 flex items-center justify-center shadow-xl hover:shadow-[0_0_20px_rgba(184,134,11,0.2)] transition-all bg-black/60 backdrop-blur-md"
+//             title="Call Us"
+//           >
+//             <Phone className="w-5 h-5 text-[var(--gold-dark)]" />
+//           </motion.button>
 
-//         {/* Map Trigger Button */}
-//         <motion.button
-//           whileHover={{ scale: 1.1, x: 5 }}
-//           whileTap={{ scale: 0.9 }}
-//           onClick={() => setIsMapOpen(true)}
-//           className="cursor-pointer w-11 h-11 md:w-12 md:h-12 rounded-full glass-card border border-[var(--gold-primary)]/30 flex items-center justify-center shadow-xl hover:shadow-[0_0_20px_rgba(184,134,11,0.2)] transition-all bg-black/60 backdrop-blur-md"
-//           title="Open Property Map"
-//         >
-//           <MapIcon className="w-5 h-5 text-[var(--gold-primary)]" />
-//         </motion.button>
+//           <motion.button
+//             whileHover={{ scale: 1.1, x: 5 }}
+//             whileTap={{ scale: 0.9 }}
+//             onClick={handleMapOpen}
+//             className="cursor-pointer w-12 h-12 rounded-full glass-card border border-[var(--gold-primary)]/30 flex items-center justify-center shadow-xl hover:shadow-[0_0_20px_rgba(184,134,11,0.2)] transition-all bg-black/60 backdrop-blur-md"
+//             title="Open Property Map"
+//           >
+//             <MapIcon className="w-5 h-5 text-[var(--gold-primary)]" />
+//           </motion.button>
 
-//         {/* WhatsApp Button */}
-//         <motion.button
-//           whileHover={{ scale: 1.1, x: 5 }}
-//           whileTap={{ scale: 0.9 }}
-//           onClick={handleWhatsapp}
-//           className="cursor-pointer w-11 h-11 md:w-12 md:h-12 rounded-full glass-card border border-[#25D366]/30 flex items-center justify-center shadow-xl hover:shadow-[0_0_20px_rgba(37,211,102,0.3)] transition-all bg-black/60 backdrop-blur-md"
-//           title="Chat on WhatsApp"
-//         >
-//           <MessageCircle className="w-5 h-5 text-[#25D366]" />
-//         </motion.button>
+//           <motion.button
+//             whileHover={{ scale: 1.1, x: 5 }}
+//             whileTap={{ scale: 0.9 }}
+//             onClick={handleWhatsapp}
+//             className="cursor-pointer w-12 h-12 rounded-full glass-card border border-[#25D366]/30 flex items-center justify-center shadow-xl hover:shadow-[0_0_20px_rgba(37,211,102,0.3)] transition-all bg-black/60 backdrop-blur-md"
+//             title="Chat on WhatsApp"
+//           >
+//             <MessageCircle className="w-5 h-5 text-[#25D366]" />
+//           </motion.button>
+//         </div>
+
+//         {/* 🌟 MOBILE VIEW (Expandable FAB) */}
+//         <div className="md:hidden flex flex-col-reverse items-center gap-3">
+          
+//           {/* Main Toggle Button */}
+//           <motion.button
+//             whileTap={{ scale: 0.9 }}
+//             onClick={() => setIsMenuOpen(!isMenuOpen)}
+//             className="relative cursor-pointer w-14 h-14 rounded-full border border-[var(--gold-primary)]/50 flex items-center justify-center shadow-[0_0_20px_rgba(184,134,11,0.3)] transition-all bg-[var(--gold-primary)] text-[var(--bg-base)] z-10"
+//             title="Contact Options"
+//           >
+//             {!isMenuOpen && (
+//               <span className="absolute inset-0 rounded-full animate-ping bg-[var(--gold-primary)]/40 -z-10" />
+//             )}
+//             <motion.div
+//               animate={{ rotate: isMenuOpen ? 45 : 0 }}
+//               transition={{ duration: 0.3 }}
+//             >
+//               <Plus className="w-7 h-7" />
+//             </motion.div>
+//           </motion.button>
+
+//           {/* Expanded Buttons */}
+//           <AnimatePresence>
+//             {isMenuOpen && (
+//               <div className="flex flex-col-reverse items-center gap-3 mb-1 w-full absolute bottom-16 pb-2">
+                
+//                 {/* WhatsApp */}
+//                 <motion.button
+//                   variants={menuVariants}
+//                   initial="closed"
+//                   animate="open"
+//                   exit="closed"
+//                   onClick={handleWhatsapp}
+//                   className="cursor-pointer w-11 h-11 rounded-full glass-card border border-[#25D366]/40 flex items-center justify-center shadow-xl bg-black/70 backdrop-blur-md"
+//                 >
+//                   <MessageCircle className="w-5 h-5 text-[#25D366]" />
+//                 </motion.button>
+
+//                 {/* Map */}
+//                 <motion.button
+//                   variants={menuVariants}
+//                   initial="closed"
+//                   animate="open"
+//                   exit="closed"
+//                   onClick={handleMapOpen}
+//                   className="cursor-pointer w-11 h-11 rounded-full glass-card border border-[var(--gold-primary)]/40 flex items-center justify-center shadow-xl bg-black/70 backdrop-blur-md"
+//                 >
+//                   <MapIcon className="w-5 h-5 text-[var(--gold-primary)]" />
+//                 </motion.button>
+
+//                 {/* Call */}
+//                 <motion.button
+//                   variants={menuVariants}
+//                   initial="closed"
+//                   animate="open"
+//                   exit="closed"
+//                   onClick={handleCall}
+//                   className="cursor-pointer w-11 h-11 rounded-full glass-card border border-[var(--gold-primary)]/40 flex items-center justify-center shadow-xl bg-black/70 backdrop-blur-md"
+//                 >
+//                   <Phone className="w-5 h-5 text-[var(--gold-primary)]" />
+//                 </motion.button>
+
+//               </div>
+//             )}
+//           </AnimatePresence>
+//         </div>
 
 //       </div>
 
@@ -244,11 +332,11 @@
 //   );
 // }
 
-
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+// 🔥 FIX: Imported Variants from framer-motion
+import { motion, AnimatePresence, Variants } from "framer-motion";
 import { MessageCircle, Map as MapIcon, Phone, Plus, X } from "lucide-react";
 import InteractiveMapModal from "@/components/InteractiveMapModal";
 
@@ -448,8 +536,8 @@ export default function GlobalFloatingActions({ phone, whatsappMessage }: { phon
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isMenuOpen]);
 
-  // Framer motion variants for mobile stagger animation
-  const menuVariants = {
+  // 🔥 FIX: Added Variants type here
+  const menuVariants: Variants = {
     closed: { opacity: 0, y: 20, scale: 0.8, transition: { duration: 0.2 } },
     open: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.3, type: "spring", stiffness: 300, damping: 24 } }
   };
